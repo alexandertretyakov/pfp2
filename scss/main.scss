@@ -1,0 +1,39 @@
+/* ------------------------------------------------------ Basic styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    background-image: url("../images/35.gif");
+}
+
+a {
+    color: #c69b3c;
+}
+
+/*----------------------------------------- Header */
+
+.header {
+    color: #c69b3c;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #6a4101;
+    background-color: #200004;
+    vertical-align: 4px;
+
+    .nav-1{
+        float: right;
+
+        .adjustment {
+
+        }
+    }
+}
