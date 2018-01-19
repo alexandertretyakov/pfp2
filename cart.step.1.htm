@@ -34,9 +34,7 @@
             </div>
 
             <div class="content--article">
-                <div class="enter">
-                    <a href="#">SIGN IN</a>
-                </div>
+                <button class="enter">SIGN IN</button>
                 <h2>Already a customer?</h2>
                 <div class="module--contact">
                     <h3>Persoonlijke Gegevens</h3>
@@ -133,10 +131,7 @@
                         </div>
                     </form>
                 </div>
-
-                <div class="betaling">
-                    <a href="#">GA DOOR NAAR KASSA &gt; BETALING</a>
-                </div>
+                <button class="betaling">GA DOOR NAAR KASSA &gt; BETALING</button>
             </div>
 
             <div class="content--footer">
@@ -177,8 +172,18 @@
             </div>
 
             <div class="opening"></div>
-
         </div>
     </div>
+<script>
+    var a = document.querySelector('.open button');
+    a.addEventListener('click', function() {
+        var b = document.querySelectorAll('.opening')[0].style.display;
+        if (b === ""){
+            b = "block"
+        } else {
+            b = ""
+        }
+    });
+</script>
 </body>
 </html>
