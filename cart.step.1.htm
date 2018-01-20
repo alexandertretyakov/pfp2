@@ -175,13 +175,12 @@
         </div>
     </div>
 <script>
-    var a = document.querySelector('.open button');
-    a.addEventListener('click', function() {
-        var b = document.querySelectorAll('.opening')[0].style.display;
-        if (b === ""){
-            b = "block"
+
+    document.querySelectorAll('.open button')[0].addEventListener('click', function() {
+        if (document.querySelectorAll('.opening')[0].style.display === '') {
+            document.querySelectorAll('.opening')[0].style.display = 'block';
         } else {
-            b = ""
+            document.querySelectorAll('.opening')[0].style.display = '';
         }
     });
 </script>
