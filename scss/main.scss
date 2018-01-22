@@ -26,6 +26,12 @@ a {
     padding-bottom: 40px;
 }
 
+button:hover {
+    cursor: pointer;
+    text-decoration: none !important;
+    border: none !important;
+}
+
 /*----------------------------------------- Header */
 
 .header {
@@ -57,10 +63,6 @@ a {
                 background-color: #200004;
                 border-bottom: 1px dashed;
                 font-size: 10px;
-
-                &:hover {
-                    border: none;
-                }
             }
         }
     }
@@ -126,11 +128,8 @@ a {
         border: none;
         text-decoration: underline;
         color: #c38b0d;
-
-        &:hover {
-            text-decoration: none;
-        }
     }
+
     .enter::after {
         content: '';
         display: block;
@@ -180,10 +179,75 @@ a {
         width: 322px;
         height: 33px;
         background-image: url("../images/14.gif");
-        margin: 0 0 40px 185px;
         padding: 0 0 2px 50px;
         border: none;
         color: #c29a31;
+    }
+
+    .betaling--page1 {
+        margin: 0 0 40px 185px;
+    }
+
+    .betaling--page2 {
+        margin: 0 0 20px 250px;
+    }
+}
+
+.page--step2 {
+    h3 {
+        margin-left: 37px;
+        color: #370000;
+        font-size: 14px;
+        float: left;
+    }
+
+    h4 {
+        color: #370000;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 13px;
+    }
+}
+
+.form {
+    margin: 0 0 27px 54px;
+    display: inline-block;
+
+    input {
+        margin: 0 17px 0 58px;
+    }
+
+    .visa,
+    .masterCard,
+    .americanExpress,
+    .dinersClub,
+    .payPal {
+        width: 240px;
+        height: 35px;
+        border-bottom: 1px solid #dddddd;
+        font: 13px  bold ;
+        color: #000000;
+        padding-top: 9px;
+    }
+
+    .visa {
+        background: url("../images/30.gif") 5px no-repeat;
+    }
+
+    .masterCard {
+        background: url("../images/31.gif") 5px no-repeat;
+    }
+
+    .americanExpress {
+        background: url("../images/32.gif") 5px no-repeat;
+    }
+
+    .dinersClub {
+        background: url("../images/33.gif") 5px no-repeat;
+    }
+
+    .payPal {
+        background: url("../images/34.gif") 5px no-repeat;
     }
 }
 
@@ -211,6 +275,96 @@ a {
         right: 15px;
     }
 }
+
+.items {
+    width: 410px;
+    margin: 0 0 17px 164px;
+    border: 1px solid #b09a68;
+
+    .ribbon {
+        color: #f4f1d3;
+        height: 19px;
+        background-color: #540000;
+        padding: 5px 0 0 15px;
+
+        p {
+            display: inline-block;
+
+            &:nth-child(2) {
+                margin-left: 57px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 85px;
+            }
+
+            &:nth-child(4) {
+                margin-left: 41px;
+            }
+        }
+    }
+
+    .item {
+        margin: 15px 0 87px 18px;
+        clear: both;
+        position: relative;
+
+        .icon {
+            width: 60px;
+            height: 68px;
+            background-color: #cccccc;
+            color: #550000;
+            text-align: center;
+            font-size: 10px;
+            float: left;
+        }
+
+        .omschrijving {
+            width: 105px;
+            margin-left: 17px;
+            float: left;
+
+            p {
+                &:nth-child(1) {
+                    margin-bottom: 7px;
+                }
+
+                &:nth-child(2) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .price {
+            display: inline-block;
+            margin-left: 62px;
+
+            p {
+                display: inline-block;
+
+                &:nth-child(2) {
+                    margin-left: 56px;
+                }
+            }
+        }
+
+        .delivery {
+            background: url("../images/25.gif") no-repeat;
+            padding-left: 25px;
+            border: none;
+            color: inherit;
+            position: absolute;
+            right: 5px;
+            bottom: -60px;
+
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+}
+
+/*----------------------------------------- Footer */
 
 .footer {
     height: 30px;
@@ -263,10 +417,6 @@ a {
             text-decoration: underline;
             color: #c48a09;
             border: none;
-
-            &:hover {
-                text-decoration: none;
-            }
         }
     }
 
@@ -286,10 +436,6 @@ a {
             text-decoration: underline;
             color: #c48a09;
             border: none;
-
-            &:hover {
-                text-decoration: none;
-            }
         }
     }
 
@@ -302,4 +448,11 @@ a {
         display: none;
     }
 }
+
+.page--step2 {
+    .footer {
+        margin-bottom: 37px;
+    }
+}
+
 
