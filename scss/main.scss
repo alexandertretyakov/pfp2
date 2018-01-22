@@ -112,6 +112,12 @@ button:hover {
 .content--article {
     padding-top: 30px;
 
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
     h2 {
         text-transform: uppercase;
         color: #cf8b1a;
@@ -278,8 +284,16 @@ button:hover {
 
 .module-items {
     width: 410px;
-    margin: 0 0 17px 164px;
+    margin: 0 0 17px 0;
     border: 1px solid #b09a68;
+
+    .page--step2 & {
+        margin-left: 164px;
+    }
+
+    .page--step3 & {
+        float: right;
+    }
 
     .ribbon {
         color: #f4f1d3;
@@ -369,8 +383,8 @@ button:hover {
     float: left;
 
     h3 {
-        color: #7b0000;                               // странная хрень со шрифтом
-        font: 15px bold;
+        color: #7b0000;
+        font: bold 15px;
     }
 
     p {
@@ -389,11 +403,10 @@ button:hover {
     }
 }
 
-h4 {
+.page--step3 h4 {
     color: #370000;
     font-size: 14px;
-    float: right;
-    margin-right: 10px;
+    text-align: center;
 }
 
 .page--step4 {
