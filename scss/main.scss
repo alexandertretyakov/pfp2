@@ -279,7 +279,6 @@ button:hover {
 .module-items {
     width: 410px;
     margin: 0 0 17px 0;
-    border: 1px solid #b09a68;
 
     &::after {
         content: '';
@@ -303,84 +302,88 @@ button:hover {
         margin-bottom: 13px;
     }
 
-    .ribbon {
-        color: #f4f1d3;
-        height: 19px;
-        background-color: #540000;
-        padding: 5px 0 0 15px;
+    .module-content {
+        border: 1px solid #b09a68;
 
-        p {
-            display: inline-block;
-
-            &:nth-child(2) {
-                margin-left: 57px;
-            }
-
-            &:nth-child(3) {
-                margin-left: 85px;
-            }
-
-            &:nth-child(4) {
-                margin-left: 41px;
-            }
-        }
-    }
-
-    .item {
-        margin: 15px 0 87px 18px;
-        clear: both;
-        position: relative;
-
-        .icon {
-            width: 60px;
-            height: 68px;
-            background-color: #cccccc;
-            color: #550000;
-            text-align: center;
-            font-size: 10px;
-            float: left;
-        }
-
-        .determination {
-            width: 105px;
-            margin-left: 17px;
-            float: left;
-
-            p {
-                &:nth-child(1) {
-                    margin-bottom: 7px;
-                }
-
-                &:nth-child(2) {
-                    margin-bottom: 10px;
-                }
-            }
-        }
-
-        .price {
-            display: inline-block;
-            margin-left: 62px;
+        .ribbon {
+            color: #f4f1d3;
+            height: 19px;
+            background-color: #540000;
+            padding: 5px 0 0 15px;
 
             p {
                 display: inline-block;
 
                 &:nth-child(2) {
-                    margin-left: 56px;
+                    margin-left: 57px;
+                }
+
+                &:nth-child(3) {
+                    margin-left: 85px;
+                }
+
+                &:nth-child(4) {
+                    margin-left: 41px;
                 }
             }
         }
 
-        .delivery {
-            background: url("../images/25.gif") no-repeat;
-            padding-left: 25px;
-            border: none;
-            color: inherit;
-            position: absolute;
-            right: 5px;
-            bottom: -60px;
+        .item {
+            margin: 15px 0 87px 18px;
+            clear: both;
+            position: relative;
 
-            &:hover {
-                text-decoration: underline !important;
+            .icon {
+                width: 60px;
+                height: 68px;
+                background-color: #cccccc;
+                color: #550000;
+                text-align: center;
+                font-size: 10px;
+                float: left;
+            }
+
+            .determination {
+                width: 105px;
+                margin-left: 17px;
+                float: left;
+
+                p {
+                    &:nth-child(1) {
+                        margin-bottom: 7px;
+                    }
+
+                    &:nth-child(2) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            .price {
+                display: inline-block;
+                margin-left: 62px;
+
+                p {
+                    display: inline-block;
+
+                    &:nth-child(2) {
+                        margin-left: 56px;
+                    }
+                }
+            }
+
+            .delivery {
+                background: url("../images/25.gif") no-repeat;
+                padding-left: 25px;
+                border: none;
+                color: inherit;
+                position: absolute;
+                right: 5px;
+                bottom: -60px;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
             }
         }
     }
@@ -623,11 +626,5 @@ button:hover {
         border-bottom: 1px solid #ece0af;
         background-color: #ffffff;
         display: none;
-    }
-}
-
-.page--step2 {
-    .footer {
-        margin-bottom: 37px;
     }
 }
