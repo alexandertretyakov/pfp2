@@ -182,7 +182,7 @@ button:hover {
         }
     }
 
-    .betaling {
+    .payment {
         width: 322px;
         height: 33px;
         background-image: url("../images/14.gif");
@@ -191,11 +191,11 @@ button:hover {
         color: #c29a31;
     }
 
-    .betaling--page1 {
+    .payment--page1 {
         margin: 0 0 40px 185px;
     }
 
-    .betaling--page2 {
+    .payment--page2 {
         margin: 0 0 20px 250px;
     }
 }
@@ -206,13 +206,6 @@ button:hover {
         color: #370000;
         font-size: 14px;
         float: left;
-    }
-
-    h4 {
-        color: #370000;
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 13px;
     }
 }
 
@@ -288,12 +281,26 @@ button:hover {
     margin: 0 0 17px 0;
     border: 1px solid #b09a68;
 
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
     .page--step2 & {
         margin-left: 164px;
     }
 
     .page--step3 & {
         float: right;
+        margin: 0 20px 10px 0;
+    }
+
+    h4 {
+        color: #370000;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 13px;
     }
 
     .ribbon {
@@ -334,7 +341,7 @@ button:hover {
             float: left;
         }
 
-        .omschrijving {
+        .determination {
             width: 105px;
             margin-left: 17px;
             float: left;
@@ -385,7 +392,7 @@ button:hover {
 
     h3 {
         color: #7b0000;
-        font: bold 15px;
+        font: bold 15px serif;
     }
 
     p {
@@ -465,6 +472,74 @@ button:hover {
         background: url("../images/19.gif");
     }
 }
+
+.page--step3 {
+
+    .orders {
+        clear: both;
+        background: url("../images/22.gif") 300px 0 no-repeat;
+        padding-top: 28px;
+
+        form {
+            padding-left: 160px;
+            margin-bottom: 20px;
+
+            label {
+                width: 180px;
+                display: inline-block;
+                text-align: right;
+                padding-right: 10px;
+                color: #994040;
+                vertical-align: 2px;
+                font: bold 12px serif;
+            }
+
+            input {
+                width: 253px;
+                height: 20px;
+                margin-bottom: 5px;
+            }
+
+            select {
+                margin-bottom: 5px;
+                color: #550000;
+            }
+
+            .field--card-code {
+
+                input {
+                    width: 100px;
+                }
+
+                a {
+                    font: bold 12px serif;
+                    color: #994040;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        p {
+            font: 12px serif;
+            color: #994040;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        button {
+            width: 322px;
+            height: 33px;
+            background: url("../images/21.gif");
+            color: #c29a23;
+            border: none;
+            margin: 0 0 50px 200px;
+        }
+    }
+}
+
 
 /*----------------------------------------- Footer */
 
@@ -556,5 +631,3 @@ button:hover {
         margin-bottom: 37px;
     }
 }
-
-

@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>PassionForPaintings — Oil Paintings and Portraits</title>
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,6 @@
 
                 <div class="module module-items">
                     <h4>The items</h4>
-
                     <div class="ribbon">
                         <p>ITEM</p>
                         <p>OMSCHRIJVING</p>
@@ -57,7 +57,7 @@
                     <div class="item">
                         <div class="icon">jpg</div>
 
-                        <div class="omschrijving">
+                        <div class="determination">
                             <p>The wave</p>
                             <p>Albert Bierstadt</p>
                             <p>Reproduction 24x36 inches</p>
@@ -73,7 +73,7 @@
                     <div class="item">
                         <div class="icon">jpg</div>
 
-                        <div class="omschrijving">
+                        <div class="determination">
                             <p>The wave</p>
                             <p>Albert Bierstadt</p>
                             <p>Reproduction 24x36 inches</p>
@@ -86,61 +86,64 @@
                         <button class="delivery">Gratis thuisbezorgd</button>
                     </div>
                 </div>
-            </div>
 
+                <div class="orders">
+                    <form>
+                        <div class="field field--card-name">
+                            <label>Cardholder’s name:</label>
+                            <input name="name" type="text">
+                        </div>
 
+                        <div class="field field--card-number">
+                            <label>Credit card number:</label>
+                            <input name="name" type="text">
+                        </div>
 
-    The items
-    ITEM
-    OMSCHRIJVING
-    AANT.
-    PRIJS
+                        <div class="field field--card-data">
+                            <label>Expiration date (month, year):</label>
+                            <select>
+                                <option value="Other">01</option>
+                                <option value="Other">02</option>
+                                <option value="Other">03</option>
+                            </select>
 
-    The wave
-    1
-    $249
-    Albert Bierstadt
-    Reproduction 24x36 inches
-    Gratis thuisbezorgd
+                            <select>
+                                <option value="Other">2007</option>
+                                <option value="Other">2008</option>
+                                <option value="Other">2009</option>
+                            </select>
+                        </div>
 
-    The wave
-    1
-    $249
-    Albert Bierstadt
-    Reproduction 24x36 inches
-    Gratis thuisbezorgd
-
-    Cardholder’s name:
-    Credit card number:
-    Expiration date (month, year):
-    Credit card verification code:
-    (whats this?)
-
-    Please note: your order confirmation will be sent from orders@passionforpaintings.com. So if you are using any email or spam filtering, please
-    make sure you can receive messages from this adress.
-
-    PLACE YOUR ORDER
-
-    All rights reserved. &copy; 1997-2007 My Passion For ltd.
-    Terms of use
-    Company information
-    Contact us
-
-    My Wishlist
-    Login name:
-    Password:
-    Log in
-    Maximize
-        </div>
-
-            <div class="footer">
-                All rights reserved. &copy; 1997-2007 My Passion For ltd.
-                <div class="nav-2">
-                    <a href="#">Terms of use</a>
-                    <a href="#">Company information</a>
-                    <a href="#">Contact us</a>
+                        <div class="field field--card-code">
+                            <label>Credit card verification code:</label>
+                            <input name="name" type="text">
+                            <a href="#">(whats this?)</a>
+                        </div>
+                    </form>
+                    <p>Please note: your order confirmation will be sent from orders@passionforpaintings.com.
+                        So if you are using any email or spam filtering, please make sure you can receive messages from
+                        this adress.</p>
+                    <button>PLACE YOUR ORDER</button>
                 </div>
             </div>
+
+            <div class="content--footer">
+                <a class="links" href="#"><img src="images/13.gif" alt="Способ оплаты"></a>
+                <a class="links" href="#"><img src="images/28.gif" alt="Способ оплаты"></a>
+                <a class="links" href="#"><img src="images/27.gif" alt="Способ оплаты"></a>
+                <a class="links" href="#"><img src="images/28.gif" alt="Способ оплаты"></a>
+                <img class="discount" src="images/17.png" alt="Реклама экономии средств">
+            </div>
+        </div>
+
+        <div class="footer">
+            All rights reserved. &copy; 1997-2007 My Passion For ltd.
+            <div class="nav-2">
+                <a href="#">Terms of use</a>
+                <a href="#">Company information</a>
+                <a href="#">Contact us</a>
+            </div>
+        </div>
 
             <div class="wishlist">
                 <h4>My Wishlist</h4>
