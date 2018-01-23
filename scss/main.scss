@@ -24,6 +24,7 @@ a {
 .page {
     position: relative;
     padding-bottom: 40px;
+    min-height: 100%;
 }
 
 button:hover {
@@ -409,16 +410,61 @@ button:hover {
     text-align: center;
 }
 
-.page--step4 {
-    h3 {
-        color: #370000;
-        font-size: 14px;
+.end-registration {
+    margin-bottom: 20px;
+
+    p {
         text-align: center;
-        margin-bottom: 27px;
+        color: #370000;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:nth-child(1) {
+            font-size: 14px;
+            margin-bottom: 27px;
+        }
+
+        &:nth-child(2) {
+            font-size: 15px;
+            margin-bottom: 35px;
+        }
+
+        &:nth-child(4) {
+            margin-bottom: 23px;
+        }
+    }
+
+    a {
+        color: #370000;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    button {
+        height: 34px;
+        margin-top: 20px;
+        border: none;
+        padding: 0 0 3px 25px;
+        color: #c29a31;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+
+    .shopping {
+        margin: 0 8px 0 178px;
+        width: 201px;
+        background: url("../images/18.gif");
+    }
+
+    .print {
+        width: 185px;
+        background: url("../images/19.gif");
     }
 }
-
-
 
 /*----------------------------------------- Footer */
 
