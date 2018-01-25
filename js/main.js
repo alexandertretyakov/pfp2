@@ -8,4 +8,11 @@ window.addEventListener('load', function() {
             body.style.display = '';
         }
     });
+
+    button.addEventListener('click', function() {
+        var el = document.querySelectorAll('.footer');
+        if (el[0].style.bottom === '') {
+            el[0].style.bottom = '129px';
+        } else {el[0].style.bottom = ''}
+    });
 });
