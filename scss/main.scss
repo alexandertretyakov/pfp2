@@ -584,12 +584,14 @@ button:hover {
 
     form {
         display: inline-block;
+        margin-bottom: 5px;
 
         .login,
         .password,
         button {
             display: inline-block;
             margin-left: 18px;
+            font-size: 12px;
         }
 
         button {
