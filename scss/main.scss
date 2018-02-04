@@ -76,6 +76,10 @@ button:hover {
     margin: 0 auto 70px auto;
     border: 7px solid #ffffff;
     background-color: #ffffff;
+
+    .page.page--wishlist-open & {
+        margin-bottom: 170px;
+    }
 }
 
 .content--header {
@@ -565,6 +569,10 @@ button:hover {
             padding-left: 10px;
         }
     }
+
+    .page.page--wishlist-open & {
+        bottom: 129px;
+    }
 }
 
 .wishlist {
@@ -602,31 +610,44 @@ button:hover {
         }
     }
 
-    .open {
+    .wishlist-toggle {
         float: right;
-        background: url("../images/23.gif") 64px 0 no-repeat;
+        margin-right: 35px;
+        background-color: #2d0202;
+        text-decoration: underline;
+        color: #c48a09;
+        border: none;
+        position: relative;
 
         &::after {
             content: '';
             display: block;
-            clear: both;
-        }
-
-        button {
-            margin-right: 35px;
-            background-color: #2d0202;
-            text-decoration: underline;
-            color: #c48a09;
-            border: none;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: url("../images/36.gif") 0 0 no-repeat;
+            top: -2px;
+            right: -27px;
         }
     }
 
-    .opening {
+    &.open .wishlist-toggle {
+
+        &::after {
+            transform: rotate(180deg);
+        }
+    }
+
+    .wishlist-content {
         width: 100%;
         height: 130px;
         border-top: 1px solid #ece0af;
         border-bottom: 1px solid #ece0af;
         background-color: #ffffff;
         display: none;
+    }
+
+    &.open .wishlist-content {
+        display: block;
     }
 }
